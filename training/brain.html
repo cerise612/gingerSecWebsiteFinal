@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="technology">
+    <meta name="keywords"
+        content="security, technology, information technology, it, cyber security, web development, ui/ux, user interface, user experience, branding, logo, social media, marketing, seo">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <!-- reset css -->
+    <link href="../assets/css/reset.css" type="text/css" rel="stylesheet">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <!-- custom css -->
+    <link href="../assets/css/styles.css" type="text/css" rel="stylesheet">
+    <link href="../assets/css/media.css" type="text/css" rel="stylesheet">
+    <title>GingerSec | Brain Sensei</title>
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <nav id="navigation">
+        <a href="../business.html" id="navigationLink1">Business Services</a>
+        <a href="../home.html" id="navigationLink2">Home Services</a>
+        <a href="../training.html" id="navigationLink3">Training</a>
+        <a href="../shop.html" id="navigationLink4">Shop</a>
+        <a href="../index.html" id="navigationLink5"><img src="../assets/images/GingerSecLogo.png" alt="gingersec logo"
+                id="navigation-logo"></a>
+        <a href="../about.html" id="navigationLink6">About</a>
+        <a href="https://gingersec.blogspot.com/" target="_blank" id="navigationLink7">BYOT</a>
+        <a href="../contact.html" id="navigationLink8">Connect</a>
+        <div class="toggle-container" id="navigationLink9">
+            <input type="checkbox" id="switch" name="theme" />
+            <label for="switch"> <span id="toggleDay">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M4.069 13h-4.069v-2h4.069c-.041.328-.069.661-.069 1s.028.672.069 1zm3.034-7.312l-2.881-2.881-1.414 1.414 2.881 2.881c.411-.529.885-1.003 1.414-1.414zm11.209 1.414l2.881-2.881-1.414-1.414-2.881 2.881c.528.411 1.002.886 1.414 1.414zm-6.312-3.102c.339 0 .672.028 1 .069v-4.069h-2v4.069c.328-.041.661-.069 1-.069zm0 16c-.339 0-.672-.028-1-.069v4.069h2v-4.069c-.328.041-.661.069-1 .069zm7.931-9c.041.328.069.661.069 1s-.028.672-.069 1h4.069v-2h-4.069zm-3.033 7.312l2.88 2.88 1.415-1.414-2.88-2.88c-.412.528-.886 1.002-1.415 1.414zm-11.21-1.415l-2.88 2.88 1.414 1.414 2.88-2.88c-.528-.411-1.003-.885-1.414-1.414zm2.312-4.897c0 2.206 1.794 4 4 4s4-1.794 4-4-1.794-4-4-4-4 1.794-4 4zm10 0c0 3.314-2.686 6-6 6s-6-2.686-6-6 2.686-6 6-6 6 2.686 6 6z"
+                            id="sunIcon" />
+                    </svg> </span>
+                <svg height="25" width="50">
+                    <line x1="10" y1="0" x2="35" y2="35" style="stroke:#f48847;stroke-width: 2.25" />
+                </svg>
+                <span id="toggleNight">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M22 12c0 5.514-4.486 10-10 10-4.826 0-8.864-3.436-9.797-7.99 3.573.142 6.903-1.818 8.644-5.013 1.202-2.206 1.473-4.679.83-6.992 5.608-.194 10.323 4.338 10.323 9.995zm-10-12c-1.109 0-2.178.162-3.197.444 3.826 5.933-2.026 13.496-8.781 11.128l-.022.428c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12z"
+                            id="moonIcon" />
+                    </svg>
+                </span></label>
+        </div>
+    </nav>
+    <header id="mobileNavigation">
+        <div class="toggle-container" id="mobileNavigationDarkMode">
+            <input type="checkbox" id="switch" name="theme" />
+            <label for="switch"> <span id="toggleDay">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M4.069 13h-4.069v-2h4.069c-.041.328-.069.661-.069 1s.028.672.069 1zm3.034-7.312l-2.881-2.881-1.414 1.414 2.881 2.881c.411-.529.885-1.003 1.414-1.414zm11.209 1.414l2.881-2.881-1.414-1.414-2.881 2.881c.528.411 1.002.886 1.414 1.414zm-6.312-3.102c.339 0 .672.028 1 .069v-4.069h-2v4.069c.328-.041.661-.069 1-.069zm0 16c-.339 0-.672-.028-1-.069v4.069h2v-4.069c-.328.041-.661.069-1 .069zm7.931-9c.041.328.069.661.069 1s-.028.672-.069 1h4.069v-2h-4.069zm-3.033 7.312l2.88 2.88 1.415-1.414-2.88-2.88c-.412.528-.886 1.002-1.415 1.414zm-11.21-1.415l-2.88 2.88 1.414 1.414 2.88-2.88c-.528-.411-1.003-.885-1.414-1.414zm2.312-4.897c0 2.206 1.794 4 4 4s4-1.794 4-4-1.794-4-4-4-4 1.794-4 4zm10 0c0 3.314-2.686 6-6 6s-6-2.686-6-6 2.686-6 6-6 6 2.686 6 6z"
+                            id="sunIcon" />
+                    </svg> </span>
+                <svg height="25" width="50">
+                    <line x1="10" y1="0" x2="35" y2="35" style="stroke:#f48847;stroke-width: 2.25" />
+                </svg>
+                <span id="toggleNight">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M22 12c0 5.514-4.486 10-10 10-4.826 0-8.864-3.436-9.797-7.99 3.573.142 6.903-1.818 8.644-5.013 1.202-2.206 1.473-4.679.83-6.992 5.608-.194 10.323 4.338 10.323 9.995zm-10-12c-1.109 0-2.178.162-3.197.444 3.826 5.933-2.026 13.496-8.781 11.128l-.022.428c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12z"
+                            id="moonIcon" />
+                    </svg>
+                </span></label>
+        </div>
+        <a href="index.html" id="mobileLogo"><img src="../assets/images/GingerSecLogo.png" alt="gingersec logo"
+                id="navigation-logo"></a>
+        <nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../business.html">Business Services</a></li>
+                <li><a href="../home.html">Home Services</a></li>
+                <li><a href="../training.html">Training</a></li>
+                <li><a href="../shop.html">Shop</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="https://gingersec.blogspot.com/" target="_blank">BYOT</a></li>
+                <li><a href="../contact.html">Connect</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="Body">
+
+    </div>
+    <nav id="fatFooter">
+        <div class="footerSection" id="footerShop">
+            Shop
+            <a class="navbarLink" href="#">Antivirus</a>
+            <a class="navbarLink" href="#">Password Managers</a>
+            <a class="navbarLink" href="#">Productivity</a>
+            <a class="navbarLink" href="#">VPN</a>
+            <a class="navbarLink" href="#">Smart Home and Cameras</a>
+            <a class="navbarLink" href="#">Gaming</a>
+            <br>
+            Home Services
+            <a class="navbarLink" href="#">Hardware Setup</a>
+            <a class="navbarLink" href="#">Computer Repair</a>
+            <a class="navbarLink" href="#">Printer Setup</a>
+            <a class="navbarLink" href="#">PC Tuneups</a>
+        </div>
+        <div class="footerSection" id="footerServices">
+            Business Services
+            <a class="navbarLink" href="../service/web.html">Web Services</a>
+           <a class="navbarLink" href="../service/security.html">Security Configuration</a>
+            <a class="navbarLink" href="../service/server.html">System Administration</a>
+           <a class="navbarLink" href="../service/marketing.html">Branding and Marketing</a>
+            <a class="navbarLink" href="#">VoIP</a>
+            <a class="navbarLink" href="#">Data Backup</a>
+            <a class="navbarLink" href="#">Wifi and Network Support</a>
+            <a class="navbarLink" href="#">Virus and Malware Removal</a>
+            <a class="navbarLink" href="#">Firewall Management</a>
+            <a class="navbarLink" href="#">VPN Support</a>
+        </div>
+        <div class="footerSection" id="footerTraining">
+            Training
+            <a class="navbarLink" href="https://www.360training.com/?PID=100147614&utm_source=commissionjunction&utm_medium=affiliates&utm_campaign=GingerSec%2C+LLC&utm_content=360Training.com+-+Click+Here+For+More+Info%21&utm_term=100147614&cjevent=70297c10e29611eb83c3f1d80a1c0e12">360 Training</a>
+            <a class="navbarLink" href="https://brainsensei.com/product/complete-pmp-exam-prep-course/?cjevent=722751b1e29611eb80d678250a1c0e0d&utm_source=cj&utm_content=100147614&utm_term=13744599">Brain Sensei</a>
+            <a class="navbarLink" href="#">Instructor-Led Comptia</a>
+            <a class="navbarLink" href="#">Instructor-Led EC-Council</a>
+            <a class="navbarLink" href="#">Online Comptia A+</a>
+            <a class="navbarLink" href="#">Online Comptia Network+</a>
+            <a class="navbarLink" href="#">Online Comptia Security+</a>
+           
+        </div>
+        <div class="footerSection" id="footerAbout">
+            About Gingersec
+            <a class="navbarLink" href="../about.html">The Company</a>
+            <a class="navbarLink" href="../team.html">The Team</a>
+            <!-- <a class="navbarLink" href="../newsroom.html">Newsroom</a> -->
+            <a class="navbarLink" href="../careers.html">Careers</a>
+            <a class="navbarLink" href="https://gingersec.blogspot.com/" target="_blank">Blog</a>
+            <a class="navbarLink" href="../support.html">Contact</a>
+        </div>
+        <div class="footerSection" id="footerMore">
+            More
+            <a class="navbarLink" href="../privacy.html">Privacy</a>
+            <a class="navbarLink" href="../terms.html">Terms and Condition</a>
+            <a class="navbarLink" href="../capability.html">Capabilty Statement</a>
+            <a class="navbarLink" href="../sitemap.html">Sitemap</a>
+            <!-- <a class="navbarLink" href="#" target="_blank">Employee Portal</a> -->
+        </div>
+    </nav>
+    <nav id="footer">
+        <div id="line"></div>
+        <div id="cookieDiv">
+            <div>
+                <p id="cookieText">accept cookies</p>
+                <p>(used for dark mode only)</p>
+                <button type="button" id="cookieButton">I'm cool with it</button>
+            </div>
+        </div>
+        <div id="socialLinks">
+            <a class="navLink" href="https://www.linkedin.com/company/gingersec/" target="_blank"><img
+                    src="../assets/images/linkedin.png" alt="linkedin" class="socialImage"></a>
+            <a class="navLink" href="https://www.instagram.com/gingersec/" target="_blank"><img
+                    src="../assets/images/instagram.png" alt="instagram" class="socialImage"></a>
+            <a class="navLink" href="https://twitter.com/GingerSec_" target="_blank"><img
+                    src="../assets/images/twitter.png" alt="twitter" class="socialImage"></a>
+            <a class="navLink" href="https://www.facebook.com/2894634930548428" target="_blank"><img
+                    src="../assets/images/facebook.png" alt="facebook" class="socialImage"></a>
+            <a class="navLink" href="https://www.youtube.com/channel/UC48pZUQu344jsODt2PFxQtQ?view_as=subscriber"
+                target="_blank"><img src="../assets/images/youtube.png" alt="youtube" class="socialImage"></a>
+            <a class="navLink" href="https://www.yelp.com/biz/gingersec-phoenix-2" target="_blank"><img
+                    src="../assets/images/yelp.png" alt="Yelp" class="socialImage"></a>
+        </div>
+        <div id="navbarText">
+            &copy; 2019 -<span id="copyright">
+                <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+            </span>
+            Gingersec LLC. All rights reserved.
+        </div>
+        <div id="mc_embed_signup">
+            <form
+                action="https://gingersec.us3.list-manage.com/subscribe/post?u=3a242a3b2d674713e2806ebc6&amp;id=5b84253606"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                    <h2 id="subscribeTitle">Ready to put your company's growth on overdrive?</h2>
+                    <p id="subscribeText">Get our newsletter with tips and tricks for making technology work for you.
+                    </p>
+                    <div id="subscribeEmail">
+                        <div class="mc-field-group">
+                            <input type="email" value="" name="EMAIL" placeholder="enter your email here"
+                                class="required email" id="mce-EMAIL">
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                name="b_3a242a3b2d674713e2806ebc6_5b84253606" tabindex="-1" value=""></div>
+                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
+                                id="mc-embedded-subscribe" class="button"></div>
+                    </div>
+            </form>
+        </div>
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+        <script
+            type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+        </div>
+    </nav>
+    <!--javascript -->
+    <script type="text/javascript" src="../assets/js/app.js"></script>
+</body>
+
+</html>
