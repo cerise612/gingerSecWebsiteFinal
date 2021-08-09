@@ -1,0 +1,2548 @@
+/*--------------------------------------------------------
+phones
+--------------------------------------------------------*/
+/* Portrait */
+@media only screen and (min-device-width: 280px) and (max-device-width: 812px) and (orientation: portrait) {
+  a {
+    font-size: x-small;
+  }
+  /* navigation */
+  #navigation {
+    display: none;
+  }
+  #navigation-logo {
+    height: 4vh;
+  }
+  #toggleNight {
+    right: 75vw;
+  }
+  #mobileNavigation {
+    height: 7vh;
+    background-color: #282d30;
+    display: grid;
+    grid-template-columns: 2.5vw 30vw 60vw 5vw 2.5vw;
+    grid-template-rows: 100%;
+    position: fixed;
+    z-index: 4;
+  }
+  #stickDamnIt {
+    position: fixed !important;
+    top: 0;
+  }
+  #mobileNavigationDarkMode {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    align-self: center;
+    z-index: 5;
+  }
+  #mobileLogo {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    align-self: center;
+    z-index: 5;
+  }
+  .hamburger {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    align-self: center;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 3vh;
+    transform: translate(-5%, -50%);
+    z-index: 5;
+  }
+  .line {
+    width: 30px;
+    height: 3px;
+    background: #e9ecef;
+    margin: 5px;
+  }
+  .nav-links {
+    position: fixed;
+    background-color: #282d30;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 15vh;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links li a {
+    font-size: 25px;
+  }
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  li.fade {
+    opacity: 1;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 5vh;
+  }
+  /* footers */
+  .footerSection {
+    font-size: xx-small;
+  }
+  #fatFooter {
+    width: 100vw;
+    grid-template-columns: 3.5vw 12vw 5vw 15vw 6vw 13vw 4vw 13vw 4vw 13vw 1.5vw;
+  }
+  #footer {
+    width: 100vw;
+    grid-template-columns: 20vw 70vw 10vw;
+    grid-template-rows: 1vh 6vh 2vh;
+    font-size: x-small;
+    padding-bottom: 2vh;
+  }
+  #line {
+    width: 94%;
+    margin: 0 2vw 0 2vw;
+  }
+  #cookieDiv {
+    display: none;
+  }
+  #subscribeEmail {
+    display: none;
+  }
+  #subscribeText {
+    display: none;
+  }
+  #subscribeTitle {
+    display: none;
+  }
+  .socialImage {
+    height: 3vh;
+  }
+  #navbarText {
+    margin: 1vh 1vw;
+  }
+  #cookieDiv {
+    display: none;
+  }
+  #subscribeEmail {
+    display: none;
+  }
+  #subscribeText {
+    display: none;
+  }
+  #subscribeTitle {
+    display: none;
+  }
+  /* landing page */
+  #home-landing {
+    width: 100vw;
+  }
+  video {
+    width: 100vw;
+  }
+  #homeLandingLogo {
+    /* top: 20vh;
+    left: 5vw; */
+    height: 45vh;
+    width: 95vw;
+  }
+  #homeLandingTag {
+    top: 70vh;
+    left: 11vw;
+    height: 35px;
+  }
+  .arrowCircleDown {
+    top: 90vh;
+    left: 44vw;
+  }
+  /* landing section 1 */
+  #container1 {
+    height: 40vh;
+  }
+  #text1 {
+    margin: 10vh 0 0 0;
+    text-align: center;
+    font-size: 1.5vh;
+    width: 100vw;
+    position: relative;
+    right: 25vw;
+  }
+  #landingLine1 {
+    display: none;
+  }
+  /* landing section 2 */
+  #capture1 {
+    width: 40vw;
+    height: 30vh;
+    margin: 4em 4em 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #landingSystemAdministrationTitle {
+    font-size: 2vh;
+  }
+  #landingSystemAdministrationButton {
+    top: 4vh;
+  }
+  #capture1Content {
+    font-size: 1.5vh;
+  }
+  /* landing section 3 */
+  #container2 {
+    width: 100vw;
+    height: 150vh;
+  }
+  #landingLine2 {
+    display: none;
+  }
+  #landingLine2PhonePortrait1 {
+    display: initial;
+    position: relative;
+    left: 25vw;
+  }
+  #landingDesignTitle {
+    margin: 0 0 0 0;
+    font-size: 3vh;
+    position: relative;
+    bottom: 23vh;
+    right: -3vw;
+  }
+  .textBox {
+    width: 100vw;
+    margin: 0;
+  }
+  #landingLine2PhonePortrait2 {
+    display: initial;
+    position: relative;
+    bottom: 30vh;
+    left: 25vw;
+  }
+  .textBoxLeft1 {
+    height: 235px;
+    width: 60vw;
+    right: -22vw;
+    bottom: 37.2vh;
+    font-size: 1.5vh;
+  }
+  #landingDevelopmentTitle {
+    font-size: 2vh;
+  }
+  #landingLine2PhonePortrait3 {
+    display: initial;
+    position: relative;
+    bottom: 34vh;
+    left: 25vw;
+  }
+  .textBoxRight1 {
+    height: 235px;
+    width: 60vw;
+    left: 20vw;
+    bottom: 41vh;
+    font-size: 1.5vh;
+    margin: 0;
+  }
+  #landingBrandingTitle {
+    font-size: 3vh;
+  }
+  #text1Content {
+    margin: 0vh;
+  }
+  #landingBrandingButton {
+    position: relative;
+    top: 7vh;
+  }
+  #landingLine2PhonePortrait4 {
+    display: initial;
+    position: relative;
+    bottom: 38.5vh;
+    left: 25vw;
+  }
+  /* landing section 4 */
+  #capture2 {
+    width: 40vw;
+    height: 30vh;
+    margin: 4em 4em 0 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 10vw;
+  }
+  #landingCyberTitle {
+    font-size: 2vh;
+  }
+  #landingCyberButton {
+    top: 2vh;
+  }
+  /* landing section 5 */
+  #container3 {
+    font-size: 1.5vh;
+    text-align: center;
+    height: 60vh;
+  }
+  #container3LeftText {
+    right: 6vw;
+    bottom: 10vh;
+  }
+  #landingShopTitle {
+    font-size: 2vh;
+  }
+  #container3Line {
+    height: 60vh;
+  }
+  #container3RightText {
+    position: relative;
+    bottom: 10vh;
+  }
+  #landingTrainTitle {
+    font-size: 2vh;
+  }
+  #landingTrainButton {
+    position: relative;
+    bottom: 2.5vh;
+  }
+  /* landing section 6 */
+  #bgBreak3 {
+    z-index: 2;
+  }
+  #landingHomeTitle {
+    font-size: 2vh;
+  }
+  #landingHomeButton {
+    top: 1vh;
+    padding: 2vh 5vw;
+  }
+  /* landing section 7 */
+  #container4 {
+    width: 100vw;
+    height: 65vh;
+  }
+  #container4Line {
+    height: 50vh;
+    bottom: 30vh;
+    right: 30vw;
+    z-index: 0;
+  }
+  #landingLearnTitle {
+    font-size: 2vh;
+  }
+  #container4Text {
+    width: 60vw;
+    position: relative;
+    bottom: 30vh;
+    left: 10vw;
+  }
+  /* about page */
+  #aboutBody {
+    height: fit-content;
+  }
+  #aboutLogo {
+    display: none;
+  }
+  #aboutLandingText {
+    font-size: 1em;
+  }
+  #aboutLanding {
+    height: fit-content;
+    grid-template-rows: 0.1fr 1fr 0.1fr 1fr 0fr 0fr 0.5fr 0.1fr;
+  }
+  #aboutTitleImage {
+    height: 110vh;
+  }
+  #aboutLandingMission {
+    font-size: 2em;
+  }
+  /* team page */
+  #teamBody {
+    padding-top: 7vh;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.01fr 0.01fr 0.01fr 0.01fr 0.01fr 1fr 0fr 0.01fr 0.01fr;
+  }
+  #teamTitle {
+    font-size: 2em;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  #teamText {
+    font-size: 1.35em;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+  }
+  #teamCards {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 6;
+  }
+  #career-button {
+    padding: 3vh 3vw;
+    width: 30vw;
+    font-size: 1.5em;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 8;
+  }
+  /* career page */
+  #careerBody {
+    grid-template-rows: 0.15fr 0.5fr 0.1fr 0.2fr 0.1fr 0.25fr 0.04fr 0.25fr 0.1fr;
+  }
+  #careerText {
+    font-size: 1em;
+  }
+  #careerSub {
+    font-size: 2em;
+  }
+  #careerLogo {
+    display: none;
+  }
+  #careerList {
+    font-size: 1em;
+  }
+  #jobsEmailLink {
+    font-size: 1em;
+  }
+  /* home service page */
+  #computerSetupImage {
+    display: none;
+  }
+  #computerTuneupImage {
+    display: none;
+  }
+  #printerSetupImage {
+    display: none;
+  }
+  #operatingSystemImage {
+    display: none;
+  }
+  #homeServiceTitle {
+	font-size: 3.17em;
+}
+#homeServiceSubheader {
+	font-size: 1em;
+}
+  .homeServiceLink {
+	width: 20vw;
+	height: 8vh;
+	padding: 3vh 7vw 3vh 7vw;
+	font-size: 1.3em;
+}
+  #HomeServiceBox1 {
+	width: auto;
+	grid-column-start: 3;
+	grid-column-end: 7;
+}
+#computerSetupTitle {
+	grid-column-start: 3;
+	grid-column-end: 7;
+	font-size: 1.5em;
+}
+#computerSetupList {
+	grid-column-start: 3;
+	grid-column-end: 7;
+	font-size: 1em;
+}
+#computerSetupButton {
+	grid-column-start: 3;
+	grid-column-end: 7;
+}
+#HomeServiceBox2 {
+	width: auto;
+	grid-column-start: 3;
+	grid-column-end: 7;
+}
+#computerTuneupTitle {
+	grid-column-start: 3;
+	grid-column-end: 7;
+	font-size: 1.5em;
+}
+#computerTuneupList {
+	grid-column-start: 3;
+	grid-column-end: 7;
+	font-size: .88em;
+}
+#computerTuneupButton {
+	grid-column-start: 3;
+	grid-column-end: 7;
+	grid-row-start: 27;
+	grid-row-end: 27;
+}
+#HomeServiceBox3 {
+	width: auto;
+	grid-column-start: 3;
+	grid-column-end: 7;
+}
+#printerSetupTitle {
+	grid-column-start: 3;
+	grid-column-end: 7;
+	font-size: 1.5em;
+}
+#printerSetupList {
+	grid-column-start: 3;
+	grid-column-end: 7;
+	font-size: 1em;
+}
+#printerSetupButton {
+	grid-column-start: 3;
+	grid-column-end: 7;
+}
+#operatingSystemTitle {
+	grid-column-start: 3;
+	grid-column-end: 7;
+	font-size: 1.5em;
+}
+#operatingSystemList {
+	grid-column-start: 3;
+	grid-column-end: 7;
+	font-size: 1em;
+}
+#operatingSystemButton {
+	width: 20vw;
+	height: 8vh;
+	padding: 3vh 7vw 3vh 7vw;
+	font-size: 1.3em;
+	grid-column-start: 3;
+	grid-column-end: 7;
+	grid-row-start: 53;
+	grid-row-end: 53;
+}
+  /* business service page */
+  #businessServiceBody {
+    padding-top: 7vh;
+    height: 260vh;
+    grid-template-columns: 5vw 90vw 5vw;
+    grid-template-rows: 5vh 8vh 5vh 8vh 15vh 7vh 55vh 10vh 55vh 7vh 15vh 10vh 15vh 7vh 55vh 10vh 55vh 7vh 15vh 5vh;
+  }
+  #businessServiceTitle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 7vh;
+    margin-left: 0vw;
+  }
+  #businessServiceSubheader {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 2vh;
+    width: 80vw;
+    margin: 0 0 0 5vw;
+  }
+  #businessServiceBox1 {
+    height: 40vh;
+    top: 49vh;
+  }
+  #systemAdministrationImage {
+    display: none;
+  }
+  #systemAdministrationTitle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 2.5vh;
+  }
+  #systemAdministrationPitch {
+    z-index: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 7;
+    font-size: 1.5vh;
+    width: 50vw;
+    margin: 0 0 0 20vw;
+  }
+  #systemAdministrationButton {
+    top: 0vh;
+  }
+  #businessServiceBox2 {
+    height: 40vh;
+    left: 20vw;
+    top: 100vh;
+  }
+  #webServicesTitle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 2.5vh;
+    left: 1vw;
+    bottom: 72vh;
+  }
+  #webServicesPitch {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 1.5vh;
+    top: -12vh;
+    width: 50vw;
+  }
+  #webServicesImage {
+    display: none;
+  }
+  #webServicesButton {
+    bottom: 1vh;
+  }
+  #businessServiceBox3 {
+    height: 40vh;
+    left: 20vw;
+    top: 153vh;
+  }
+  #cyberImage {
+    display: none;
+  }
+  #cyberTitle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 2.5vh;
+    margin-top: 0vh;
+    position: absolute;
+    bottom: -62vh;
+    left: 37vw;
+  }
+  #cyberPitch {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 1.5vh;
+    margin-top: 0vh;
+    position: absolute;
+    bottom: -92vh;
+    left: 22vw;
+    width: 60vw;
+  }
+  #cyberButton {
+    top: 2.8vh;
+  }
+  #businessServiceBox4 {
+    height: 40vh;
+    left: 20vw;
+    top: 208vh;
+  }
+  #brandingTitle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 60vw;
+    font-size: 2.5vh;
+    left: 15vw;
+    top: -80vh;
+  }
+  #brandingPitch {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 1.5vh;
+    width: 50vw;
+    left: 20vw;
+    bottom: 132vh;
+  }
+  #brandingButton {
+    top: 11vh;
+  }
+  #brandingImage {
+    display: none;
+  }
+  /* contact page */
+  #contactBody {
+    padding-top: 7vh;
+    height: fit-content;
+    grid-template-columns: 5vw 45vw 45vw 5vw;
+    /* grid-template-columns: .1fr 1fr 1fr 0.1fr; */
+    grid-template-rows: 3vh 10vh 10vw 10vw 10vw 10vw 10vw 3vw 16vw 18vw 45vh 5vh 8vh;
+  }
+  #contactHeader {
+    font-size: 3em;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  #divider {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: 8;
+  }
+  hr {
+    height: 1px;
+    width: 90vw;
+    background-color: #e9ecef;
+  }
+  #telephoneTitle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    font-size: 2vh;
+    text-align: center;
+  }
+  #telephoneLink {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    font-size: 2vh;
+    text-align: center;
+  }
+  #locationTitle {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    font-size: 2vh;
+    text-align: center;
+  }
+  #locationText {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    font-size: 2vh;
+    text-align: center;
+  }
+  #hoursTitle {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    font-size: 2vh;
+    text-align: center;
+  }
+  #hoursText {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    font-size: 2vh;
+    text-align: center;
+  }
+  #formTitle {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 9;
+    grid-row-end: 9;
+    text-align: center;
+    font-size: 3vh;
+    padding: 2vh 0 1vh;
+  }
+  #formText {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 10;
+    grid-row-end: 10;
+    text-align: center;
+    font-size: 2vh;
+    padding: 0 2vw;
+  }
+  #contactForm {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 11;
+    grid-row-end: 11;
+    margin-left: 5vw;
+    font-size: 2vh;
+  }
+  .formField {
+    width: 70vw;
+  }
+  #leadsList{
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 12;
+	grid-row-end: 12;
+}
+  .contactFormButton {
+	  width: 5vw;
+	  height: 2vh;
+    padding: 2vh 7vw;
+    margin: 5vh 0 0 2vw;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 12;
+	grid-row-end: 12;
+  }
+  /* capabillity page */
+  #capabilityBody {
+  }
+  #capabilityTitle {
+    font-size: 2.4em;
+  }
+  #capabilityText {
+    font-size: 0.8em;
+  }
+  .capabilityImage {
+  }
+  #downloadLink {
+    font-size: 1em;
+  }
+  /* term and privacy pages */
+  #termsTitle {
+    font-size: 5vh;
+  }
+  /* sitemap page */
+  #sitemapBody {
+    padding-top: 7vh;
+  }
+  #sitemapTitle {
+    margin: 5vh 0 0 17vw;
+  }
+  #sitemapPanel {
+    grid-template-columns: 15vw 20vw 2.5vw 25vw 2.5vh 20vw 15vw;
+    grid-template-rows: 5vh 10vh 10vh 5vh;
+  }
+  .sitemepSectionTitle {
+    font-size: 2vh;
+    margin-bottom: 0.5vh;
+  }
+  /* system administration page */
+}
+/* galaxy fold portrait */
+@media (max-width: 320px) {
+  /* about page */
+  #teamButton {
+    padding: 1em 1em;
+    font-size: 1em;
+  }
+  #aboutLanding {
+    grid-template-columns: 0.5fr 2fr 0.5fr 10fr 0fr 0fr 1fr;
+    grid-template-rows: 0.01fr 0.5fr 0.01fr 0.5fr 0fr 0fr 0.5fr 0.01fr;
+  }
+  #aboutLandingMission {
+    font-size: 1em;
+  }
+  #aboutLandingText {
+    font-size: 0.75em;
+  }
+  #aboutTitleImage {
+    height: 95vh;
+  }
+  /* team page */
+  .flipCard {
+    width: 250px;
+    height: 790px;
+    perspective: 1000px;
+    margin: 2vh 2vw 5vh 2vw;
+  }
+  #cardImage {
+    height: 250px;
+    width: 250px;
+  }
+  /* career page */
+  #careerBody {
+    grid-template-rows: 0.15fr 0.5fr 0.1fr 0.2fr 0.1fr 0.25fr 0.04fr 0.25fr 0.1fr;
+  }
+  #careerTitleImage {
+    height: 85vh;
+  }
+  #careerText {
+    font-size: 0.7em;
+  }
+  #careerSub {
+    font-size: 1.25em;
+  }
+  #careerListTitle {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  #careerList {
+    font-size: 1em;
+  }
+}
+/* galaxy s5 */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (min-resolution: 192dpi)
+  and (orientation: portrait) {
+	#computerSetupButton {
+		position: relative;
+		top: 3vh;
+	}
+	#HomeServiceBox2 {
+		width: auto;
+		grid-column-start: 3;
+		grid-column-end: 7;
+	}
+	#computerTuneupTitle {
+		grid-column-start: 3;
+		grid-column-end: 7;
+		font-size: 1.5em;
+	}
+	#computerTuneupList {
+		grid-column-start: 3;
+		grid-column-end: 7;
+		font-size: .88em;
+	}
+	#computerTuneupButton {
+		grid-column-start: 3;
+		grid-column-end: 7;
+		grid-row-start: 27;
+		grid-row-end: 27;
+	}
+	#HomeServiceBox3 {
+		width: auto;
+		grid-column-start: 3;
+		grid-column-end: 7;
+	}
+	#printerSetupTitle {
+		grid-column-start: 3;
+		grid-column-end: 7;
+		font-size: 1.5em;
+	}
+	#printerSetupList {
+		grid-column-start: 3;
+		grid-column-end: 7;
+		font-size: 1em;
+	}
+	#printerSetupButton {
+		grid-column-start: 3;
+		grid-column-end: 7;
+	}
+	#operatingSystemTitle {
+		grid-column-start: 3;
+		grid-column-end: 7;
+		font-size: 1.5em;
+	}
+	#operatingSystemList {
+		grid-column-start: 3;
+		grid-column-end: 7;
+		font-size: 1em;
+	}
+	#operatingSystemButton {
+		width: 20vw;
+		height: 8vh;
+		padding: 3vh 7vw 3vh 7vw;
+		font-size: 1.3em;
+		grid-column-start: 3;
+		grid-column-end: 7;
+		grid-row-start: 53;
+		grid-row-end: 53;
+	}
+
+}
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 822px) and (orientation: landscape) {
+  /* navigation */
+  #navigation {
+    display: none;
+  }
+  #toggleNight {
+    left: 18vh;
+  }
+  #navigation-logo {
+    height: 8vh;
+    padding: 2vh 0 0 12.5vw;
+  }
+  #mobileNavigation {
+    height: 15vh;
+    background-color: #282d30;
+    opacity: 0.95;
+    display: grid;
+    grid-template-columns: 2.5vw 30vw 60vw 5vw 2.5vw;
+    grid-template-rows: 100%;
+    position: fixed;
+    z-index: 4;
+  }
+  #mobileNavigationDarkMode {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    align-self: center;
+    z-index: 5;
+    position: relative;
+    bottom: 3vh;
+  }
+  #mobileLogo {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    align-self: center;
+    z-index: 5;
+  }
+  .hamburger {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    align-self: center;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 7vh;
+    transform: translate(-5%, -50%);
+    z-index: 5;
+  }
+  .line {
+    width: 30px;
+    height: 3px;
+    background: #e9ecef;
+    margin: 5px;
+  }
+  .nav-links {
+    position: fixed;
+    /* bottom: 5vh; */
+    background-color: #282d30;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    padding: 15vh 0 5vh 4vw;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links li a {
+    font-size: 20px;
+  }
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  li.fade {
+    opacity: 1;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 2vh;
+  }
+  /* footers */
+  .footerSection {
+    font-size: xx-small;
+  }
+  #footer {
+    grid-template-columns: 30vw 60vw 10vw;
+    font-size: x-small;
+  }
+  .socialImage {
+    height: 5vh;
+  }
+  #navbarText {
+    margin: 2vh 0vw;
+  }
+  #cookieDiv {
+    display: none;
+  }
+  #subscribeEmail {
+    display: none;
+  }
+  #subscribeText {
+    display: none;
+  }
+  #subscribeTitle {
+    display: none;
+  }
+  /* landing page */
+  #homeLandingLogo {
+    left: 43vw;
+    height: 45vh;
+  }
+  #homeLandingTag {
+    top: 75vh;
+    height: 35px;
+  }
+  .arrowCircleDown {
+    top: 80vh;
+    left: 51vw;
+  }
+  .parallax [class*="bg__"] {
+    height: 80vh;
+  }
+  /* landing section 1 */
+  #landingLine1 {
+    left: -4vw;
+  }
+  /* landing section 2 */
+  #bgBreak1 {
+    font-size: 2vh;
+  }
+  #landingSystemAdministrationButton {
+    top: 4vh;
+  }
+  /* landing section 3 */
+  #container2 {
+    font-size: 2vh;
+  }
+  #landingLine2 {
+    display: none;
+  }
+  #landingDesignTitle {
+    padding-top: 0;
+    position: relative;
+    top: 7vh;
+    left: 4vw;
+  }
+  #landingLine2PhoneLandscape1 {
+    display: initial;
+    position: relative;
+    bottom: 15vh;
+    left: 26.5vw;
+  }
+  .textBoxLeft1 {
+    height: 27vh;
+    width: 40vw;
+    right: 7.5vw;
+    bottom: 110vh;
+  }
+  .textBoxRight1 {
+    height: 27vh;
+    width: 40vw;
+    left: 45vw;
+    bottom: 113vh;
+  }
+  /* landing section 4 */
+  #bgBreak2 {
+    font-size: 2vh;
+  }
+  #landingCyberButton {
+    top: 2vh;
+  }
+  /* landing section 5 */
+  #container3 {
+    font-size: 2.5vh;
+    text-align: center;
+  }
+  #container3Line {
+    height: 70vh;
+  }
+  #container3LeftText {
+    bottom: 10vh;
+  }
+  #container3RightText {
+    position: relative;
+    bottom: 9vh;
+  }
+  /* landing section 6 */
+  #bgBreak3 {
+    font-size: 2vh;
+    z-index: 2;
+  }
+  /* landing section 7 */
+  #container4Line {
+    /* height: 50vh; */
+    bottom: 90vh;
+    z-index: 0;
+  }
+  #container4Text {
+    position: relative;
+    bottom: 85vh;
+    left: 18vw;
+    font-size: 3vh;
+  }
+  /* about page */
+  #aboutLandingText {
+    font-size: smaller;
+  }
+
+  #aboutBody {
+    height: fit-content;
+  }
+  #aboutLandingText {
+    font-size: 1em;
+  }
+  #aboutLanding {
+    height: fit-content;
+    padding: 7vh 0 0 0;
+    grid-template-rows: 0.1fr 0.5fr 0.1fr 0.5fr 0fr 0fr 0.5fr 0.1fr;
+  }
+  #aboutTitleImage {
+    height: 150vh;
+  }
+  #aboutLandingMission {
+    font-size: 2em;
+  }
+  #teamButton {
+    padding: 1.5em 3em;
+    font-size: 1em;
+  }
+  #aboutLogo {
+    width: 30vw;
+    height: 70vh;
+  }
+  /* team page */
+  #teamBody {
+    padding-top: 7vh;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.01fr 0.01fr 0.01fr 0.01fr 0.01fr 1fr 0fr 0.01fr 0.01fr;
+  }
+  #teamTitle {
+    font-size: 2em;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  #teamText {
+    font-size: 1.35em;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+  }
+  #teamCards {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    justify-content: center;
+  }
+  #career-button {
+    padding: 3vh 3vw;
+    width: 30vw;
+    font-size: 1.5em;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 8;
+  }
+  /* career page */
+  #careerBody {
+    padding: 13vh 0 0 0;
+    grid-template-rows: 0.1fr 0.5fr 0.1fr 0.2fr 0.1fr 0.15fr 0.1fr 0.25fr 0.1fr;
+  }
+  #careerText {
+    font-size: 0.75em;
+  }
+  #careerSub {
+    font-size: 1.2em;
+  }
+  #careerList {
+    font-size: 0.75em;
+  }
+  #careerListTitle {
+    font-size: 1.75em;
+  }
+  #jobsEmailLink {
+    font-size: 1em;
+  }
+  #careerLogo {
+    height: 20vh;
+  }
+  /* contact page */
+  #contactBody {
+    padding-top: 10vh;
+    height: 155vh; 
+  }
+  #contactHeader {
+	  font-size: 3em;
+  }
+  #telephoneTitle {
+	font-size: 1.5em;
+}
+#telephoneLink {
+	font-size: 1.2em;
+}
+#locationTitle {
+	font-size: 1.5em;
+}
+#locationText {
+	font-size: 1.2em;
+}
+#hoursTitle {
+	font-size: 1.5em;
+}
+#hoursText {
+	font-size: 1.2em;
+}
+#formTitle {
+	font-size: 1.5em;
+}
+#formText {
+	font-size: 1.2em;
+	grid-row-end: 8;
+}
+#contactForm {
+	grid-row-start: 7;
+	font-size: 1em;
+	margin-left: 1vw;
+}
+  .contactFormButton {
+    padding: 1vh 3vw;
+    width: 5vw;
+	height: 7vh;
+	margin: 5vh 0 0 0;
+	grid-row-start: 11;
+	grid-row-end: 11;
+  }
+  #leadsList{
+	grid-row-start: 11;
+	grid-row-end: 11;
+	margin: 3vh 0 0 1vw; 
+  }
+  #mce-MMERGE4{
+	  margin-top: 8vh;
+  }
+  /* home services page */
+  .homeServiceLink {
+	font-size: .5em;
+}
+#operatingSystemButton{
+	font-size: .5em;
+}
+  /* business service page */
+  #businessServiceBody {
+    padding-top: 15vh;
+    height: fit-content;
+    width: 100vw;
+    background-color: var(--bg);
+    color: var(--color-text);
+    display: grid;
+    grid-template-columns: 5vw 20vw 10vw 50vw 5vw;
+    grid-template-rows: 5vh 12vh 5vh 15vh 15vh 7vh 55vh 10vh 55vh 7vh 15vh 10vh 15vh 7vh 55vh 10vh 55vh 7vh 15vh 15vh;
+    text-align: center;
+  }
+  #systemAdministrationButton {
+    position: relative;
+    top: -2vh;
+  }
+  #webServicesTitle {
+    bottom: 40vh;
+  }
+  #webServicesPitch {
+    left: 20vw;
+    top: 22vh;
+  }
+  #webServicesImage {
+    left: 30vw;
+    bottom: 40vh;
+  }
+  #webServicesButton {
+    bottom: 6vh;
+  }
+  #cyberButton {
+    top: -0.5vh;
+  }
+  #brandingButton {
+    position: relative;
+    top: 10vh;
+  }
+  /* capabillity page */
+
+  /* sitemap page */
+  #sitemapBody {
+    padding-top: 7vh;
+  }
+}
+
+/* iphone 6 7 8 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+	#computerSetupButton {
+		position: relative;
+		top: 10vh;
+	}
+	#computerTuneupButton {
+		position: relative;
+		top: 10vh;
+	}
+	#printerSetupButton {
+		position: relative;
+		top: 10vh;
+	}
+	#operatingSystemButton {
+		position: relative;
+		top: 3vh;
+	}
+
+}
+/* iphone 6 7 8+ */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+	#computerSetupButton {
+		position: relative;
+		top: 10vh;
+	}
+	#computerTuneupButton {
+		position: relative;
+		top: 10vh;
+	}
+	#printerSetupButton {
+		position: relative;
+		top: 10vh;
+	}
+	#operatingSystemButton {
+		position: relative;
+		top: 3vh;
+	}
+}
+	/* pixel 2 galaxy s5 */
+	@media only screen 
+  and (min-device-width: 411px) 
+  and (max-device-width: 731px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+	.homeServiceLink {
+		font-size: .3em;
+	}
+	#computerSetupButton {
+		position: relative;
+		top: 10vh;
+	}
+	#computerTuneupButton {
+		position: relative;
+		top: 10vh;
+	}
+	#printerSetupButton {
+		position: relative;
+		top: 10vh;
+	}
+	#operatingSystemButton {
+		position: relative;
+		top: 3vh;
+	}
+}
+
+/*--------------------------------------------------------
+tablets
+--------------------------------------------------------*/
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* navigation */
+  #navigation {
+    display: none;
+  }
+  #toggleNight {
+    right: 86vw;
+  }
+  #navigation-logo {
+    height: 5vh;
+    padding: 1.5vh 0 0 5vw;
+  }
+  #mobileNavigation {
+    height: 7vh;
+    background-color: #282d30;
+    opacity: 0.95;
+    display: grid;
+    grid-template-columns: 2.5vw 30vw 60vw 5vw 2.5vw;
+    grid-template-rows: 100%;
+    position: fixed;
+    z-index: 4;
+  }
+  #mobileNavigationDarkMode {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    align-self: center;
+    z-index: 5;
+  }
+  #mobileLogo {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    align-self: center;
+    z-index: 5;
+  }
+  .hamburger {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    align-self: center;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 3vh;
+    transform: translate(-5%, -50%);
+    z-index: 5;
+  }
+  .line {
+    width: 30px;
+    height: 3px;
+    background: #e9ecef;
+    margin: 5px;
+  }
+  .nav-links {
+    position: fixed;
+    background-color: #282d30;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    padding: 15vh 0 0 4vw;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links li a {
+    font-size: 30px;
+  }
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  li.fade {
+    opacity: 1;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 2vh;
+  }
+  /* footers */
+  #footer {
+    grid-template-columns: 20vw 70vw 10vw;
+    grid-template-rows: 1vh 6vh 2vh;
+  }
+  #cookieDiv {
+    display: none;
+  }
+  #subscribeEmail {
+    display: none;
+  }
+  #subscribeText {
+    display: none;
+  }
+  #subscribeTitle {
+    display: none;
+  }
+  /* landing page */
+  video {
+    width: 95vw;
+  }
+  #homeLandingLogo {
+    top: 20vh;
+    left: 5vw;
+    height: 45vh;
+  }
+  #homeLandingTag {
+    top: 75vh;
+    left: 11vw;
+    font-size: 35px;
+  }
+  .arrow-circle-down {
+    top: 80vh;
+    left: 48vw;
+  }
+  /* landing page */
+  #home-landing {
+    width: 100vw;
+  }
+  video {
+    width: 100vw;
+  }
+  #homeLandingLogo {
+    top: 20vh;
+    left: 20vw;
+  }
+  #homeLandingTag {
+    top: 70vh;
+    left: 11vw;
+  }
+  .arrowCircleDown {
+    top: 90vh;
+    left: 44vw;
+  }
+  /* landing section 1 */
+  #container1 {
+    height: 40vh;
+  }
+  #text1 {
+    margin: 10vh 0 0 0;
+    text-align: center;
+    font-size: 1.5vh;
+    width: 100vw;
+    position: relative;
+    right: 25vw;
+  }
+  #landingLine1 {
+    left: -11vw;
+    width: 100vw;
+  }
+  /* landing section 2 */
+  #capture1 {
+    width: 40vw;
+    height: 25vh;
+    margin: 4em 4em 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #landingSystemAdministrationTitle {
+    font-size: 2vh;
+  }
+  #landingSystemAdministrationButton {
+    top: 5vh;
+  }
+  #capture1Content {
+    font-size: 1.5vh;
+  }
+  /* landing section 3 */
+  #container2 {
+    width: 100vw;
+    height: 120vh;
+  }
+  #landingLine2 {
+    display: none;
+  }
+  #landingLine2PhonePortrait1 {
+    display: initial;
+    position: relative;
+    left: 35vw;
+  }
+  #landingDesignTitle {
+    margin: 0 0 0 0;
+    width: 75vw;
+    font-size: 3vh;
+    position: relative;
+    bottom: 17vh;
+    right: -11vw;
+  }
+  .textBox {
+    width: 100vw;
+    margin: 0;
+  }
+  #landingLine2PhonePortrait2 {
+    display: initial;
+    position: relative;
+    bottom: 20vh;
+    left: 35vw;
+  }
+  .textBoxLeft1 {
+    height: 235px;
+    width: 60vw;
+    right: -20vw;
+    bottom: 25.5vh;
+    font-size: 1.5vh;
+  }
+  #landingDevelopmentTitle {
+    font-size: 2vh;
+  }
+  #landingDevelopmentButton {
+    top: 8vh;
+  }
+  #landingLine2PhonePortrait3 {
+    display: initial;
+    position: relative;
+    bottom: 24vh;
+    left: 35vw;
+  }
+  .textBoxRight1 {
+    height: 235px;
+    width: 60vw;
+    left: 20vw;
+    bottom: 29.5vh;
+    font-size: 1.5vh;
+  }
+  #landingBrandingTitle {
+    font-size: 3vh;
+  }
+  #text1Content {
+    margin: 0vh;
+  }
+  #landingBrandingButton {
+    position: relative;
+    top: 7vh;
+  }
+  #landingLine2PhonePortrait4 {
+    display: initial;
+    position: relative;
+    bottom: 28.5vh;
+    left: 35vw;
+  }
+  /* landing section 4 */
+  #capture2 {
+    width: 40vw;
+    height: 30vh;
+    margin: 4em 4em 0 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 10vw;
+  }
+  #landingCyberTitle {
+    font-size: 2vh;
+  }
+  #landingCyberButton {
+    top: 8.5vh;
+  }
+  /* landing section 5 */
+  #container3 {
+    font-size: 1.5vh;
+    text-align: center;
+    height: 60vh;
+  }
+  #container3LeftText {
+    right: 6vw;
+    bottom: 10vh;
+  }
+  #landingShopTitle {
+    font-size: 2vh;
+  }
+  #container3Line {
+    height: 60vh;
+  }
+  #container3RightText {
+    position: relative;
+    bottom: 10vh;
+  }
+  #landingTrainTitle {
+    font-size: 2vh;
+  }
+  #landingTrainButton {
+    position: relative;
+    bottom: 2.5vh;
+  }
+  /* landing section 6 */
+  #bgBreak3 {
+    z-index: 2;
+  }
+  #landingHomeTitle {
+    font-size: 2vh;
+  }
+  #landingHomeButton {
+    top: 1vh;
+    padding: 2vh 5vw;
+  }
+  /* landing section 7 */
+  #container4 {
+    width: 100vw;
+    height: 65vh;
+  }
+  #container4Line {
+    height: 50vh;
+    bottom: 20vh;
+    right: -10vw;
+    z-index: 0;
+  }
+  #landingLearnTitle {
+    font-size: 2vh;
+  }
+  #container4Text {
+    width: 60vw;
+    position: relative;
+    bottom: 30vh;
+    left: 10vw;
+  }
+  /* about page*/
+  #aboutBody {
+    height: fit-content;
+  }
+  #aboutLanding {
+    height: 100vh;
+  }
+  #aboutTitleImage {
+    height: 68vh;
+  }
+  #aboutLandingMission {
+    font-size: 2em;
+  }
+  #aboutLandingText {
+    font-size: 1em;
+  }
+  /* team page */
+  #teamBody {
+  }
+  #teamTitle {
+    font-size: 7vh;
+  }
+  #teamText {
+    font-size: 2.5vh;
+  }
+  #teamCards {
+    justify-content: center;
+  }
+  #career-button {
+  }
+  /* career page */
+
+  /* contact page */
+  .contactFormButton {
+	width: 6vw;
+	height: 4vh;
+	margin: 0 0 0 4vw;
+}
+ 
+  /* home service page */
+  #computerSetupImage {
+    display: none;
+  }
+  #computerTuneupImage {
+    display: none;
+  }
+  #printerSetupImage {
+    display: none;
+  }
+  #operatingSystemImage {
+    display: none;
+  }
+  #homeServiceBody {
+    height: fit-content;
+    grid-template-columns: 5vw 90vw 5vw;
+    grid-template-rows: 5vh 12vh 5vh 30vh 80vh 80vh 80vh 80vh 5vh;
+    text-align: center;
+  }
+  #homeServiceTitle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: center;
+    font-size: 10vh;
+    margin-left: 5vw;
+  }
+  #homeServiceSubheader {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    text-align: center;
+    font-size: 3vh;
+    width: 62vw;
+    margin-left: 15vw;
+  }
+  #HomeServiceBox1 {
+    left: 20vw;
+    top: 60vh;
+  }
+  #computerSetupTitle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    margin-top: 5vh;
+  }
+  #computerSetupList {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    margin-top: 19vh;
+  }
+  #HomeServiceBox2 {
+    left: 20vw;
+    top: 140vh;
+  }
+  #computerTuneupTitle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    margin-top: 5vh;
+    left: 1vw;
+    bottom: 0;
+  }
+  #computerTuneupList {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    margin: 18vh 0 0 2vw;
+    left: 0;
+    top: 0;
+  }
+  #computerSetupButton {
+    z-index: 1;
+    position: relative;
+    bottom: -4.5vh;
+  }
+  #printerSetupTitle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 7;
+    margin-top: 4vh;
+  }
+  #printerSetupList {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 7;
+    margin: 14vh 0 0 15vw;
+    width: 60vw;
+  }
+  #printerSetupButton {
+    top: 17vh;
+  }
+  #HomeServiceBox4 {
+    left: 20vw;
+    top: 300vh;
+  }
+  #operatingSystemTitle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 8;
+    left: 15vw;
+    top: 5vh;
+    width: 60vw;
+  }
+  #operatingSystemList {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 8;
+    left: 16vw;
+    bottom: 0vh;
+    margin-top: 22vh;
+    width: 60vw;
+  }
+  #operatingSystemButton {
+    top: 13vh;
+  }
+  /* business service page */
+  #businessServiceBody {
+    height: fit-content;
+    grid-template-columns: 5vw 90vw 5vw;
+    grid-template-rows: 5vh 12vh 5vh 30vh 80vh 80vh 80vh 80vh 15vh;
+    text-align: center;
+  }
+  #businessServiceTitle {
+    margin-left: 0vw;
+  }
+  #businessServiceSubheader {
+    font-size: 2.5vh;
+  }
+  #businessServiceBox1 {
+    left: 20vw;
+    top: 60vh;
+  }
+  #systemAdministrationImage {
+    display: none;
+  }
+  #systemAdministrationTitle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    margin-top: 5vh;
+  }
+  #systemAdministrationPitch {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    margin: 6vh 0 0 20vw;
+    width: 50vw;
+  }
+  #systemAdministrationButton {
+    z-index: 1;
+    position: relative;
+    top: 5.5vh;
+  }
+  #businessServiceBox2 {
+    left: 20vw;
+    top: 140vh;
+  }
+  #webServicesTitle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    margin-top: 5vh;
+    left: 1vw;
+    bottom: 0;
+  }
+  #webServicesPitch {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    margin: 18vh 0 0 2vw;
+    top: -4vh;
+    width: 50vw;
+  }
+  #webServicesButton {
+    bottom: 2.5vh;
+  }
+  #webServicesImage {
+    display: none;
+  }
+  #cyberImage {
+    display: none;
+  }
+  #cyberTitle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 7;
+    margin-top: 10vh;
+  }
+  #cyberPitch {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 7;
+    margin: 25vh 0 0 5vw;
+    width: 60vw;
+  }
+  #cyberButton {
+    top: 3vh;
+  }
+  #businessServiceBox4 {
+    left: 20vw;
+    top: 310vh;
+  }
+  #brandingTitle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 8;
+    left: 15vw;
+    width: 60vw;
+  }
+  #brandingPitch {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 8;
+    left: 20vw;
+    bottom: -28vh;
+    width: 50vw;
+  }
+  #brandingButton {
+    top: 13vh;
+  }
+  #brandingImage {
+    display: none;
+  }
+  /* capabillity page */
+  #capabilityBody {
+  }
+  .capabilityImage {
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 823px) and (max-device-width: 1366px) and (orientation: landscape) {
+  /* navigation */
+  #navigation {
+    display: none;
+  }
+  #toggleNight {
+    right: 89vw;
+  }
+  #navigation-logo {
+    height: 6vh;
+    padding: 1vh 0 0 10vw;
+  }
+  #mobileNavigation {
+    height: 7vh;
+    background-color: #282d30;
+    opacity: 0.95;
+    display: grid;
+    grid-template-columns: 2.5vw 30vw 60vw 5vw 2.5vw;
+    grid-template-rows: 100%;
+    position: fixed;
+    z-index: 4;
+  }
+  #mobileNavigationDarkMode {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    align-self: center;
+    z-index: 5;
+  }
+  #mobileLogo {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    align-self: center;
+    z-index: 5;
+  }
+  .hamburger {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    align-self: center;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 3vh;
+    transform: translate(-5%, -50%);
+    z-index: 5;
+  }
+  .line {
+    width: 30px;
+    height: 3px;
+    background: #e9ecef;
+    margin: 5px;
+  }
+  .nav-links {
+    position: fixed;
+    background-color: #282d30;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    padding: 15vh 0 0 14vw;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links li a {
+    font-size: 30px;
+  }
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  li.fade {
+    opacity: 1;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 2vh;
+  }
+  /* footer */
+  #footer {
+    grid-template-columns: 20vw 80vw 0vw;
+    grid-template-rows: 1vh 6vh 2vh;
+    width: 100%;
+  }
+  #navbarText {
+    margin: 3vh 0vw;
+  }
+  .socialImage {
+    height: 3vh;
+    padding: 2vh 0 2vh 0;
+  }
+  #cookieDiv {
+    display: none;
+  }
+  #subscribeEmail {
+    display: none;
+  }
+  #subscribeText {
+    display: none;
+  }
+  #subscribeTitle {
+    display: none;
+  }
+  /* landing page */
+  #homeLandingLogo {
+    left: 30vw;
+    /* height: 45vh; */
+  }
+  #homeLandingTag {
+    /* top: 75vh; */
+    height: 48px;
+    left: 58vw;
+  }
+  .arrowCircleDown {
+    /* top: 80vh; */
+    left: 49vw;
+  }
+  .parallax [class*="bg__"] {
+    height: 80vh;
+  }
+  /* landing section 1 */
+  #landingLine1 {
+    left: -1.9vw;
+  }
+  /* landing section 2 */
+  #bgBreak1 {
+    font-size: 2vh;
+    text-align: center;
+    z-index: 2;
+  }
+  #capture1 {
+    height: 34vh;
+    width: 30vw;
+    position: relative;
+    top: 12vh;
+  }
+  #landingSystemAdministrationButton {
+    top: 8vh;
+  }
+  /* landing section 3 */
+  #container2 {
+    font-size: 2vh;
+  }
+  #landingLine2 {
+    /* display: none; */
+    bottom: 10vw;
+    z-index: 0;
+  }
+  #landingDesignTitle {
+    padding-top: 0;
+    position: relative;
+    bottom: 15vh;
+  }
+  .textBoxLeft1 {
+    height: 34vh;
+    width: 33vw;
+    background-color: var(--bg);
+    right: 13.5vw;
+    bottom: 160vh;
+  }
+  .textBoxRight1 {
+    height: 34vh;
+    width: 33vw;
+    background-color: var(--bg);
+    left: 35vw;
+    bottom: 163vh;
+  }
+  /* landing section 4 */
+  #bgBreak2 {
+    font-size: 2vh;
+  }
+  #capture2 {
+    height: 34vh;
+    width: 30vw;
+  }
+  #landingCyberButton {
+    top: 6vh;
+  }
+  /* landing section 5 */
+  #container3 {
+    font-size: 2.5vh;
+    text-align: center;
+  }
+  #container3Line {
+    height: 70vh;
+  }
+  #container3LeftText {
+    bottom: 10vh;
+  }
+  #container3RightText {
+    position: relative;
+    bottom: 9vh;
+  }
+  /* landing section 6 */
+  #bgBreak3 {
+    font-size: 2vh;
+    z-index: 2;
+  }
+  /* landing section 7 */
+  #container4Line {
+    bottom: 30vh;
+    z-index: 0;
+  }
+  #container4Text {
+    position: relative;
+    bottom: 25vh;
+    width: 60vw;
+    right: 9vw;
+    font-size: 3vh;
+  }
+  #landingLearn {
+    width: 20vw;
+    position: relative;
+    left: 15vw;
+  }
+  /* about page */
+  #aboutLandingTitle {
+    width: 90vw;
+    font-size: 12vh;
+    position: absolute;
+    right: 40vw;
+    top: 17vh;
+  }
+  #aboutLandingMission {
+    font-size: 3vh;
+    margin-top: 5vh;
+  }
+  #aboutLandingText {
+    font-size: 1.7vh;
+  }
+  #aboutLogo {
+    height: 30vh;
+  }
+  #teamButton {
+    padding: 3vh 1vw 3vh 5vw;
+    width: 20vw;
+    height: 4vh;
+    font-size: x-large;
+  }
+  /* team page */
+  #teamBody {
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: 0.02fr 0.01fr 0.02fr 0.01fr 0.02fr 1fr 0.01fr 0.01fr 0.07fr;
+  }
+  #teamTitle {
+  }
+  #teamText {
+  }
+  #teamCards {
+  }
+  #career-button {
+    padding: 3vh 3vw;
+    width: 15vw;
+    font-size: 1.5em;
+  }
+  /* career page */
+  #careerTitle {
+    top: 35vh;
+  }
+  #careerSub {
+    position: relative;
+    top: 7vh;
+    right: 9vw;
+    font-size: 4.5vh;
+  }
+  /* contact page */
+  #contactHeader {
+    margin-left: 5vw;
+  }
+  /* home service page */
+  .homeServiceLink {
+	height: 7vh;
+	font-size: 1em;
+}
+  #computerSetupList {
+	grid-row-start: 9;
+	grid-row-end: 10;
+	font-size: 2vh;
+}
+  #computerSetupButton {
+	grid-row-start: 11;
+	grid-row-end: 11;
+}
+#computerTuneupTitle {
+	grid-column-start: 3;
+}
+#computerTuneupList {
+	grid-column-start: 3;
+	font-size: 2vh;
+}
+#computerTuneupButton {
+	grid-column-start: 3;
+	grid-row-start: 27;
+	grid-row-end: 27;
+}
+#printerSetupList {
+	grid-column-start: 4;
+	grid-column-end: 7;
+	grid-row-start: 35;
+	grid-row-end: 38;
+	font-size: 2vh;
+}
+#printerSetupButton {
+	grid-row-start: 40;
+	grid-row-end: 40;
+}
+#operatingSystemTitle {
+	grid-column-start: 3;
+}
+#operatingSystemList {
+	font-size: 2vh;
+	grid-column-start: 3;
+	grid-row-start: 49;
+	grid-row-end: 51;
+}
+#operatingSystemButton {
+	grid-column-start: 3;
+	grid-row-start: 53;
+	grid-row-end: 53;
+	height: 7vh;
+	font-size: 1em;
+}
+  /* business service page */
+  #systemAdministrationImage {
+    height: 30vh;
+    margin-top: 9vh;
+  }
+  #systemAdministrationPitch {
+    width: 30vw;
+    margin: 0 0 0 10vw;
+  }
+  #webServicesImage {
+    height: 30vh;
+    left: 25vw;
+    bottom: 32vh;
+  }
+  #webServicesButton {
+    bottom: 5vh;
+  }
+  #cyberImage {
+    height: 30vh;
+    margin-top: 7vh;
+  }
+  #brandingImage {
+    height: 30vh;
+    left: 27vw;
+    bottom: 32vh;
+  }
+  #cyberPitch {
+    left: 13vw;
+  }
+  #cyberButton {
+    top: -4vh;
+  }
+  /* capabillity page */
+  #capabilityBody {
+  }
+  .capabilityImage {
+  }
+  #capabilityText {
+    margin: 3vh 6vw 9vh 6vw;
+  }
+}
+/* pixel 2xl landscape */
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-device-pixel-ratio: 3.5) and (orientation: landscape) {
+  /* about page */
+  #aboutLanding {
+    grid-template-rows: 1fr 1fr 10fr 5fr 1fr 13fr 3fr 15fr;
+  }
+  #aboutLandingMission {
+    font-size: 1.5em;
+  }
+  #aboutLandingText {
+    font-size: 0.8em;
+  }
+  #aboutLogo {
+    width: 30vw;
+    height: 40vh;
+  }
+  #teamButton {
+    padding: 1em 2em 1.5em;
+    font-size: 1em;
+  }
+  /* team page */
+  #teamBody {
+    grid-template-rows: 0.02fr 0.01fr 0.02fr 0.01fr 0.02fr 1fr 0.01fr 0.01fr 0.07fr;
+    grid-template-columns: 0.01fr 1fr 0.07fr;
+  }
+  #teamText {
+    font-size: 1em;
+  }
+  #teamCards {
+    justify-content: center;
+  }
+  /* career page */
+  #careerBody {
+    padding: 13vh 0 0 0;
+    grid-template-rows: 0.1fr 0.5fr 0.1fr 0.2fr 0.1fr 0.15fr 0.1fr 0.25fr 0.1fr;
+  }
+  #careerText {
+    font-size: 0.75em;
+  }
+  #careerSub {
+    font-size: 1.2em;
+  }
+  #careerList {
+    font-size: 0.75em;
+  }
+  #careerListTitle {
+    font-size: 1.75em;
+  }
+  #jobsEmailLink {
+    font-size: 1em;
+  }
+  #careerLogo {
+    height: 20vh;
+  }
+  /* contact page */
+  #contactBody {
+	height: 150vh;
+  }
+  #contactHeader {
+	font-size: 3em;
+}
+#telephoneTitle {
+  font-size: 1.5em;
+}
+#telephoneLink {
+  font-size: 1.2em;
+}
+#locationTitle {
+  font-size: 1.5em;
+}
+#locationText {
+  font-size: 1.2em;
+}
+#hoursTitle {
+  font-size: 1.5em;
+}
+#hoursText {
+  font-size: 1.2em;
+}
+#formTitle {
+  font-size: 1.5em;
+}
+#formText {
+  font-size: 1.2em;
+}
+#contactForm {
+  font-size: 1em;
+  /* margin-left: 1vw; */
+}
+  .contactFormButton {
+    padding: 1vh 3vw;
+    width: 5vw;
+	height: 7vh;
+	margin: 5vh 0 0 0;
+	grid-row-start: 11;
+	grid-row-end: 11;
+  }
+  #leadsList{
+	grid-row-start: 11;
+	grid-row-end: 11;
+	margin: 3vh 0 0 5vw; 
+  }
+  #mce-MMERGE4{
+	  margin: 8vh 0 0 0;
+  }
+  /* home services page */
+  .homeServiceLink {
+	font-size: .7em;
+}
+
+}
+/*--------------------------------------------------------
+wearables
+--------------------------------------------------------*/
+@media (max-device-width: 218px) and (max-device-height: 281px) {
+}
